@@ -9,7 +9,7 @@ fn html_to_md(html: &str) -> String {
 }
 
 #[pymodule]
-fn html2text(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+fn rhtml2text(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(html_to_md))?;
     Ok(())
 }

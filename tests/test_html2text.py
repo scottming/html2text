@@ -1,4 +1,4 @@
-from html2text import __version__
+from rhtml2text import __version__
 
 
 def test_version():

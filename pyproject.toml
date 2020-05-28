@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "html2text"
+name = "rhtml2text"
 version = "0.1.0"
 description = ""
 authors = ["scottming <therealscottming@gmail.com>"]

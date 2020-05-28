@@ -70,7 +70,7 @@ install_requires = []
 tests_require = install_requires + ["pytest", "pytest-benchmark"]
 
 setup(
-    name="html2text",
+    name="rhtml2text",
     version="0.1.0",
     classifiers=[
         "License :: OSI Approved :: MIT License",
@@ -81,8 +81,8 @@ setup(
         "Operating System :: POSIX",
         "Operating System :: MacOS :: MacOS X",
     ],
-    packages=["html2text"],
-    rust_extensions=[RustExtension("html2text.html2text", "Cargo.toml", debug=True)],
+    packages=["rhtml2text"],
+    rust_extensions=[RustExtension("rhtml2text.rhtml2text", "Cargo.toml", debug=True)],
     install_requires=install_requires,
     tests_require=tests_require,
     setup_requires=setup_requires,
