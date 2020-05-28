@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [package]
 name = "rhtml2text"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["scottming <therealscottming@gmail.com>"]
 edition = "2018"
 
