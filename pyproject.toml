@@ -1,17 +1,15 @@
-[tool.poetry]
+[project]
 name = "rhtml2text"
-version = "0.1.2"
-description = ""
-authors = ["scottming <therealscottming@gmail.com>"]
-
-[tool.poetry.dependencies]
-python = "^3.7"
-
-[tool.poetry.dev-dependencies]
-pytest = "^4.6"
+repository = "https://github.com/scottming/rhtml2text"
 
 [build-system]
-# requires = ["poetry>=0.12"]
-# build-backend = "poetry.masonry.api"
-requires = ["setuptools>=41.0.0", "wheel", "setuptools_rust>=0.10.2", "toml"]
-build-backend = "setuptools.build_meta"
+uild-backend = "maturin"
+requires = ["maturin>=0.8.1,<0.9"]
+
+[tool.maturin]
+manylinux="off"
+
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38']
+include = '\.pyi?$'
